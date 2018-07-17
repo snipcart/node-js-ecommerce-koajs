@@ -1,0 +1,48 @@
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    title #{settings.siteName} - #{model.title}
+    link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css")
+    link(rel="stylesheet", href="https://use.fontawesome.com/releases/v5.1.0/css/all.css")
+    link(rel="stylesheet", href="https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css")
+    link(rel="stylesheet", href="/stylesheets/site.css")
+  body.text-center
+    .cover-container.d-flex.w-100.h-100.p-3.mx-auto.flex-column
+      header.masthead.mb-auto
+        .inner
+          h1.masthead-brand
+            a(href="/")=settings.siteName
+          nav.nav.nav-masthead.justify-content-center.snipcart-summary
+            a.nav-link.snipcart-checkout(href="#")
+              i.fa.fa-shopping-cart
+              |  (
+              span.snipcart-total-items
+              |) Checkout
+      main.inner.cover(role="main")
+        block content
+      footer.mastfoot.mt-auto
+        .inner
+          | Made with {code} by 
+          a(href="https://snipcart.com", target="_blank") Snipcart
+          |  | 
+          a(href="https://github.com/snipcart/snipcart-koajs", target="_blank")
+            i.fab.fa-github
+            |  GitHub 
+          | | 
+          a(href="https://twitter.com/Snipcart", target="_blank")
+            i.fab.fa-twitter
+            |  Twitter
+        .inner
+          | Cover template for 
+          a(href="https://getbootstrap.com/", target="_blank") Bootstrap
+          |  by 
+          a(href="https://twitter.com/mdo", target="_blank") @mdo
+          |.
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js')
+    script(
+      id="snipcart"
+      src='https://cdn.snipcart.com/scripts/2.0/snipcart.js'
+      data-api-key=settings.snipcartApiKey
+    )
+    block scripts

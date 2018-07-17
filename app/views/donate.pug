@@ -1,0 +1,22 @@
+extends _layout
+block scripts
+  script(src="/scripts/donate.js")
+block content
+  p
+    a(href="/") ← Back
+  h2.cover-heading=model.title
+  .form-group
+    label(for="amount") Please enter your donation amount below
+    input#amount.form-control.form-control-lg.text-center(type="number", value=model.amount)
+  button#donate.btn.btn-secondary.snipcart-add-item(
+    data-item-id="donation"
+    data-base-url=urlWithoutQuery
+    data-item-url=`${urlWithoutQuery}?amount=${model.amount}`
+    data-item-name="Donation"
+    data-item-description="Can't thank you enough! 😘"
+    data-item-price=model.amount
+    data-item-shippable="false"
+    data-item-categories="donations"
+    data-item-max-quantity="1"
+    data-item-taxable=false
+    ) Add to cart

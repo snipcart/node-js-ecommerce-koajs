@@ -1,0 +1,25 @@
+{
+    "server": {
+        "port": 3000
+    },
+    "views": {
+        "path": "app/views",
+        "options": {
+            "map": {
+                "pug": "pug"
+            },
+            "extension": "pug"
+        }
+    },
+    "static":{
+        "path":"app/static"
+    },
+    "data": {
+        "path": "app/data"
+    },
+    "settings": {
+        "siteName": "Lisa's podcast fundraiser",
+        "snipcartApiKey": "MzMxN2Y0ODMtOWNhMy00YzUzLWFiNTYtZjMwZTRkZDcxYzM4",
+        "defaultDonation" : 25
+    }
+}

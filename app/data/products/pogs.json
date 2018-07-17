@@ -1,0 +1,9 @@
+{
+    "id" : "pogs",
+    "name" : "🔵 Pogs 20-pack",
+    "description" : "Pogs are still cool and you know it. Here, buy some.",
+    "extendedDescription" : "This is NOT over, pogs are still ON. These come from my personnal collection, straight outa 90s pogs madness!",
+    "weight" : 330,
+    "price" : 150,
+    "image" : "/images/pogs.jpg"
+}
