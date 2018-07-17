@@ -2,14 +2,14 @@ extends _layout
 block content
   p
     a(href="/") ← Back
-  .container.mb-2
+  .container
     .row.justify-content-md-center.mb-3
       .col.col-lg-6
         img.w-100(
           src=model.product.image, 
           alt=model.product.name
         )
-    .row.justify-content-md-center
+    .row.justify-content-md-center.mb-3
       .col.col-lg-12
         h2.cover-heading=model.title
         p=model.product.extendedDescription
