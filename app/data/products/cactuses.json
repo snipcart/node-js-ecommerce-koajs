@@ -2,8 +2,7 @@
     "id" : "cactuses",
     "name" : "🌵 Cactuses 10-pack",
     "weight" : 1600,
-    "description" : "Great assortment of cactuses to make your appartment feel like a botanical garden",
-    "extendedDescription" : "Ugly appartment? Love plants? Hate responsibilities? This outstanding assortment of cactuses might very well be what your life is missing.",
+    "description" : "Ugly appartment? Love plants? Hate responsibilities? This outstanding assortment of cactuses might very well be what your life is missing.",
     "price" : 200,
     "image" : "/images/cactuses.jpg"
 }
