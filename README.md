@@ -21,3 +21,5 @@ Ready for this?
 > [See live demo](https://snipcart-koajs.herokuapp.com/)
 
 > [Read full tutorial](https://snipcart.com/blog/node-js-ecommerce-koa-js-tutorial)
+
+Enjoy folks!
