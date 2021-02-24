@@ -3,9 +3,11 @@ html(lang="en")
     meta(charset="utf-8")
     meta(name="viewport", content="width=device-width, initial-scale=1")
     title #{settings.siteName} - #{model.title}
+    link(rel="preconnect", href="https://app.snipcart.com")
+    link(rel="preconnect", href="https://cdn.snipcart.com")
     link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css")
     link(rel="stylesheet", href="https://use.fontawesome.com/releases/v5.1.0/css/all.css")
-    link(rel="stylesheet", href="https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css")
+    link(rel="stylesheet", href="https://cdn.snipcart.com/themes/v3.0.30/default/snipcart.css")
     link(rel="stylesheet", href="/stylesheets/site.css")
   body.text-center
     .cover-container.d-flex.w-100.h-100.p-3.mx-auto.flex-column
@@ -17,7 +19,7 @@ html(lang="en")
             a.nav-link.snipcart-checkout(href="#")
               i.fa.fa-shopping-cart
               |  (
-              span.snipcart-total-items
+              span.snipcart-items-count
               |) Checkout
       main.inner.cover(role="main")
         block content
@@ -42,7 +44,8 @@ html(lang="en")
     script(src='https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js')
     script(
       id="snipcart"
-      src='https://cdn.snipcart.com/scripts/2.0/snipcart.js'
+      src='https://cdn.snipcart.com/themes/v3.0.30/default/snipcart.js'
       data-api-key=settings.snipcartApiKey
+      data-config-modal-style="side"
     )
     block scripts

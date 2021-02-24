@@ -1,6 +1,7 @@
 extends _layout
 block scripts
   script(src="/scripts/donate.js")
+  // TODO fix donation
 block content
   p
     a(href="/") ← Back
@@ -10,7 +11,6 @@ block content
     input#amount.form-control.form-control-lg.text-center(type="number", value=model.amount)
   button#donate.btn.btn-secondary.snipcart-add-item(
     data-item-id="donation"
-    data-base-url=urlWithoutQuery
     data-item-url=`${urlWithoutQuery}?amount=${model.amount}`
     data-item-name="Donation"
     data-item-description="Can't thank you enough! 😘"
