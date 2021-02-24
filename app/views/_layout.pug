@@ -5,22 +5,22 @@ html(lang="en")
     title #{settings.siteName} - #{model.title}
     link(rel="preconnect", href="https://app.snipcart.com")
     link(rel="preconnect", href="https://cdn.snipcart.com")
-    link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css")
+    link(rel="stylesheet",
+         href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css")
     link(rel="stylesheet", href="https://use.fontawesome.com/releases/v5.1.0/css/all.css")
     link(rel="stylesheet", href="https://cdn.snipcart.com/themes/v3.0.30/default/snipcart.css")
-    link(rel="stylesheet", href="/stylesheets/site.css")
+    link(rel="stylesheet", href="/stylesheets/site.scss")
   body.text-center
-    .cover-container.d-flex.w-100.h-100.p-3.mx-auto.flex-column
-      header.masthead.mb-auto
-        .inner
-          h1.masthead-brand
-            a(href="/")=settings.siteName
+    .container.d-flex.w-100.h-100.p-3.mx-auto.flex-column
+      header.p-5.rounded-lg.m-3
           nav.nav.nav-masthead.justify-content-center.snipcart-summary
             a.nav-link.snipcart-checkout(href="#")
               i.fa.fa-shopping-cart
               |  (
               span.snipcart-items-count
               |) Checkout
+          h1.display-4
+            a(href="/")=settings.siteName
       main.inner.cover(role="main")
         block content
       footer.mastfoot.mt-auto
@@ -41,11 +41,12 @@ html(lang="en")
           |  by 
           a(href="https://twitter.com/mdo", target="_blank") @mdo
           |.
-    script(src='https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js')
     script(
-      id="snipcart"
-      src='https://cdn.snipcart.com/themes/v3.0.30/default/snipcart.js'
-      data-api-key=settings.snipcartApiKey
+      id="snipcart",
+      src='https://cdn.snipcart.com/themes/v3.0.30/default/snipcart.js',
+      data-api-key=settings.snipcartApiKey,
       data-config-modal-style="side"
     )
+    script(
+      src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js')
     block scripts
