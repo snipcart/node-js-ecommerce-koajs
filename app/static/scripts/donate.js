@@ -1,11 +1,11 @@
-$(function () {
+(function () {
   document
     .querySelector('#amount')
     .addEventListener('change', function (evt) {
       const amount = evt.target.value
-      let data = $('#donate').data()
-      data.itemPrice = amount
-      data.itemId = `donation`
-      data.itemUrl = `${data.baseUrl}?amount=${amount}`
+      let buyButton = document.querySelector('#donate')
+      buyButton.dataset.itemPrice = amount
+      buyButton.dataset.itemId = `donation`
+      buyButton.dataset.itemUrl = `${data.baseUrl}?amount=${amount}`
     })
-});
+})();
