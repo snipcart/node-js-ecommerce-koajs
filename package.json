@@ -7,15 +7,15 @@
     "dev": "nodemon index.js"
   },
   "dependencies": {
-    "config": "^1.30.0",
-    "fs-extra": "^6.0.1",
-    "koa": "^2.5.2",
-    "koa-router": "^7.4.0",
+    "config": "^3.3.3",
+    "fs-extra": "^9.1.0",
+    "koa": "^2.13.1",
+    "koa-router": "^10.0.0",
     "koa-static": "^5.0.0",
-    "koa-views": "^6.1.4",
-    "pug": "^2.0.3"
+    "koa-views": "^7.0.0",
+    "pug": "^3.0.0"
   },
   "devDependencies": {
-    "nodemon": "^1.18.1"
+    "nodemon": "^2.0.7"
   }
 }
