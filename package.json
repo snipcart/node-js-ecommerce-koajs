@@ -1,6 +1,6 @@
 {
   "name": "snipcart-koajs",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Minimalistic/low-ceremony ecommerce store built on Koa.js using Snipcart",
   "scripts": {
     "start": "node index.js",

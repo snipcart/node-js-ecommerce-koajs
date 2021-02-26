@@ -10,15 +10,15 @@ html(lang="en")
     link(rel="stylesheet", href="https://use.fontawesome.com/releases/v5.1.0/css/all.css")
     link(rel="stylesheet", href="https://cdn.snipcart.com/themes/v3.0.30/default/snipcart.css")
     link(rel="stylesheet", href="/stylesheets/site.scss")
-  body.text-center
-    .container.d-flex.w-100.h-100.p-3.mx-auto.flex-column
+  body.text-center.container.d-flex.justify-content-center.align-items-center.w-100.h-100.p-3.mx-auto.flex-column
+    section.container
+      nav.navbar.navbar-light.fixed-top.justify-content-end.snipcart-summary
+        a.nav-link.snipcart-checkout(href="#")
+          i.fa.fa-shopping-cart
+          |  (
+          span.snipcart-items-count
+          |) Checkout
       header.p-5.rounded-lg.m-3
-          nav.nav.nav-masthead.justify-content-center.snipcart-summary
-            a.nav-link.snipcart-checkout(href="#")
-              i.fa.fa-shopping-cart
-              |  (
-              span.snipcart-items-count
-              |) Checkout
           h1.display-4
             a(href="/")=settings.siteName
       main.inner.cover(role="main")
@@ -41,8 +41,7 @@ html(lang="en")
           |  by 
           a(href="https://twitter.com/mdo", target="_blank") @mdo
           |.
-    script(
-      id="snipcart",
+    script(id="snipcart",
       src='https://cdn.snipcart.com/themes/v3.0.30/default/snipcart.js',
       data-api-key=settings.snipcartApiKey,
       data-config-modal-style="side"

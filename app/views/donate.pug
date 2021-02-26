@@ -8,7 +8,7 @@ block content
   h2.cover-heading=model.title
   .form-group
     label(for="amount") Please enter your donation amount below
-    input#amount.form-control.form-control-lg.text-center(type="number", value=model.amount)
+    input#amount.form-control.text-center(type="number", value=model.amount)
   button#donate.btn.btn-secondary.snipcart-add-item(
     data-item-id="donation"
     data-item-url=`${urlWithoutQuery}?amount=${model.amount}`
