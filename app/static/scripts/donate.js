@@ -1,3 +1,6 @@
+const getUrl = window.location;
+const baseUrl = getUrl.protocol + "//" + getUrl.host + "/" + getUrl.pathname.split('/')[1];
+
 (function () {
   document
     .querySelector('#amount')
@@ -6,6 +9,6 @@
       let buyButton = document.querySelector('#donate')
       buyButton.dataset.itemPrice = amount
       buyButton.dataset.itemId = `donation`
-      buyButton.dataset.itemUrl = `${data.baseUrl}?amount=${amount}`
+      buyButton.dataset.itemUrl = `${baseUrl}?amount=${amount}`
     })
 })();
