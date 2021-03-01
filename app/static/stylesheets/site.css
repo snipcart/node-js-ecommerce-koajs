@@ -39,7 +39,7 @@ body {
   height: 100%;
 }
 
-h1,h2,h3, .card-title {
+h1,h2,h3,h4,h5 .card-title {
   font-family: 'Libre Baskerville', serif;
 
 }
@@ -96,6 +96,12 @@ a:hover {
   }
   .nav-masthead {
     float: right;
+  }
+}
+
+@media (max-width: 48em) {
+  .avatar {
+    width: 280px;
   }
 }
 
