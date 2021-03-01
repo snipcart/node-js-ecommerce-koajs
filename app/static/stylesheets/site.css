@@ -90,6 +90,10 @@ a:hover {
   border-bottom-color: var(--custom-white);
 }
 
+#snipcart {
+  z-index: 1050;
+}
+
 @media (min-width: 48em) {
   .masthead-brand {
     float: left;
