@@ -9,21 +9,23 @@ html(lang="en")
          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css")
     link(rel="stylesheet", href="https://use.fontawesome.com/releases/v5.1.0/css/all.css")
     link(rel="stylesheet", href="https://cdn.snipcart.com/themes/v3.0.30/default/snipcart.css")
-    link(rel="stylesheet", href="/stylesheets/site.scss")
-  body.text-center.container.d-flex.justify-content-center.align-items-center.w-100.h-100.p-3.mx-auto.flex-column
+    link(rel="stylesheet", href="/stylesheets/site.css")
+  body.text-center.container.w-100.h-100.p-3.mx-auto.flex-column
     section.container
-      nav.navbar.navbar-light.fixed-top.justify-content-end.snipcart-summary
+      nav.navbar.navbar-light.fixed-top.justify-content-between.snipcart-summary
+        a.mb-3.mx-3(href="/")
+          i.fa.fa-home.fa-lg
         a.nav-link.snipcart-checkout(href="#")
           i.fa.fa-shopping-cart
           |  (
           span.snipcart-items-count
           |) Checkout
-      header.p-5.rounded-lg.m-3
-          h1.display-4
+      header.rounded-lg.m-5
+          h1.display-4.m-5
             a(href="/")=settings.siteName
       main.inner.cover(role="main")
         block content
-      footer.mastfoot.mt-auto
+      footer.mastfoot.mt-auto.py-3.fixed-bottom
         .inner
           | Made with {code} by 
           a(href="https://snipcart.com", target="_blank") Snipcart

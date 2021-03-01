@@ -1,25 +1,25 @@
 extends _layout
 block content
-  section
-    section.container 
-      img.avatar.mb-5(src="https://media.giphy.com/media/7scCYNWRHUwKc/giphy.gif")
-    section.container
-      h2.cover-heading=model.title
-      p.lead I need your help to start my own podcast!
-      p.mb-5 To support me, either click on the button below to donate the amount of your choice
-    section.container.mb-3
-      p.lead.mb-3
-        a.btn.btn-lg.btn-secondary(href="/donate") 💰 Donate 💰
-      h2.cover-heading Or...
-      p buy one of these overpriced items
-      .container
-        .row
-          each product in model.products
-            .col-md
-              .card.bg-transparent.mb-3
-                .card-body
-                  h3.card-title=product.name
-                  p
-                    span.badge.badge-success $#{product.price}
-                  a.btn.btn-dark.border.border-secondary(href=`/buy/${product._slug}`) More details
+  // TODO fix CSS
+  section.container 
+    img.avatar.mt-3.mb-5(src="https://media.giphy.com/media/7scCYNWRHUwKc/giphy.gif")
+  section.container
+    h2.mb-4.cover-heading=model.title
+    p.mb-3.lead I need your help to start my own podcast!
+    p.mb-5 To support me, either click on the button below to donate the amount of your choice
+  section.container.mb-5
+    p.lead.mb-5
+      a.btn.btn-lg.btn-secondary(href="/donate") 💰 Donate 💰
+    h2.cover-heading.mb-5 Or...
+    p buy one of these overpriced items
+    .container
+      .row
+        each product in model.products
+          .col-md
+            .card.bg-transparent.h-100.mb-3
+              .card-body
+                h3.card-title=product.name
+                p
+                  span.badge.badge-success $#{product.price}
+                a.btn.btn-dark.border.border-secondary(href=`/buy/${product._slug}`) More details
               
