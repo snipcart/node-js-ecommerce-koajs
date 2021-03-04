@@ -56,6 +56,12 @@ a:hover {
   color: var(--custom-white);
 }
 
+.form-control, .form-control:focus,
+.form-control:focus:active  {
+  color: var(--custom-white);
+  background-color: var(--custom-bg);
+}
+
 /*
  * Header
  */
@@ -86,7 +92,7 @@ a:hover {
 
 .nav-masthead .active {
   color: var(--custom-white);
-  border-bottom-color: var(--custom-white);
+  background-color: var(--custom-bg);
 }
 
 #snipcart {
