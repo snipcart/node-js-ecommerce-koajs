@@ -18,7 +18,7 @@ Steps:
 
 Ready for this?
 
-> [See live demo](https://snipcart-koajs.herokuapp.com/)
+> [See live demo](https://test-koa.herokuapp.com/)
 
 > [Read full tutorial](https://snipcart.com/blog/node-js-ecommerce-koa-js-tutorial)
 
