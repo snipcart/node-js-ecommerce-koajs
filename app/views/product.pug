@@ -1,21 +1,19 @@
 extends _layout
 block content
-  p
-    a(href="/") ← Back
   .container
     .row.justify-content-md-center.mb-3
       .col.col-lg-6
-        img.w-100(
+        img.mt-3.mb-5.w-75(
           src=model.product.image, 
           alt=model.product.name
         )
-    .row.justify-content-md-center.mb-3
+    .row.justify-content-md-center.mb-5.pb-5
       .col.col-lg-12
         h2.cover-heading=model.title
         p=model.product.description
-        p
-          span.badge.badge-success $#{model.product.price}
-        button.btn.btn-secondary.snipcart-add-item(
+        div
+          h5.mb-4 $#{model.product.price}
+        button.btn.btn-lg.btn-secondary.mb-5.snipcart-add-item(
           data-item-id=model.product.id
           data-item-name=model.product.name
           data-item-url=urlWithoutQuery
